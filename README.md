@@ -1,5 +1,5 @@
 # smite-highlighter
-Creates mp4 files everytime the K/D/A changes and whole matches for the game smite
+Creates mp4 files everytime the K/D/A changes and whole matches for the game smite. Uses Python 3.7.9
 
 ## How it works
 A MP4 file is passed in. The video's resolution is converted to 900 by 600 pixels and turned to grayscale. By comparing hardcoded ROI's (regions of intrests) of the video to ROI's of comparison images, supplied from the directory, it finds when a game starts, ends, and changes in K/D/A. 
