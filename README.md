@@ -13,4 +13,14 @@ Changes in the K/D/A HUD trigger the creation of a MP4 clip. Duration of clips a
 This was created using video files that are 1920 by 1080. Locations of ROI's will have to be ajusted base on your videos resolution and sample images.
 
 ## Usage
-In a command prompt navigate to where the .py and comparison images are located. Enter 'Highlighter_V2.2.2.py -i "<Input file path>" -o <"Output file path">'. The quotes around file paths are necessary. Input file path is the location of the video you want to highlight and output path is where you want the clips and matches to be outputted.
+In a command prompt navigate to where the Highlighter_V2.2.2.py and comparison images are located. Enter
+```Shell
+  Highlighter_V2.2.2.py -i "<input file path>" -o "<output file directory>"
+  ``` 
+The quotes around file paths are necessary. Input file path is the location of the video you want to highlight and output path is where you want the clips and matches to be outputted.
+
+While it looks over the video you can see what frame it is on out of how many, how long it has been working, when it expects to finish, and how many frames per a second it is going.
+```Shell
+ 0%|                                                                          | 791/1675777 [00:10<6:12:42, 74.90it/s]
+ ```
+ Once it reaches 100% it starts to make all the clips and match videos.
