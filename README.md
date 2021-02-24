@@ -13,7 +13,11 @@ Changes in the K/D/A HUD trigger the creation of a MP4 clip. Duration of clips a
 This was created using video files that are 1920 by 1080. Locations of ROI's will have to be ajusted base on your videos resolution and sample images.
 
 ## Usage
-In a command prompt navigate to where the Highlighter_V2.2.2.py and comparison images are located. Enter
+In a command prompt navigate to where the Highlighter_V2.2.2.py, comparison images, and requirements.txt are located. Run 
+```Shell
+  pip install -r requirements.txt
+  ```
+  Wait for everything to download then enter
 ```Shell
   Highlighter_V2.2.2.py -i "<input file path>" -o "<output file directory>"
   ``` 
