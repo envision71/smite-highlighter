@@ -91,7 +91,7 @@ def highlighter(inputfile, outputpath):
     inMatch = False
     #Get the 1st frame of the video to use as a base line
     cir,compare = cap.read()
-    #Resize and grayscale for less pixel data tp speed up slightly
+    #Resize and grayscale for less pixel data to speed up slightly
     compare = cv.resize(compare,(900,600),fx=0,fy=0,
            interpolation=cv.INTER_CUBIC)
     compare=cv.cvtColor(compare,cv.COLOR_RGB2GRAY)
